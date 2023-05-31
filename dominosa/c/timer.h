@@ -8,7 +8,8 @@
 #include <time.h>
 
 typedef struct {
-    struct timespec start_time, end_time;
+    struct timespec start_time;
+    struct timespec stop_time;
 } Timer;
 
 enum { TIMER_NS, TIMER_US, TIMER_MS, TIMER_S };
