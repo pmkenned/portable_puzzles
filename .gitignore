@@ -1,6 +1,7 @@
 *
 !*.*
 !*/
+!Makefile
 
 .*.swp
 a.out
