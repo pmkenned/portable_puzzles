@@ -18,4 +18,9 @@ void timer_start(Timer * timer);
 void timer_stop(Timer * timer);
 long timer_get_elapsed(Timer * timer, int unit);
 
+#define timer_get_elapsed_ns(timer) timer_get_elapsed(timer, TIMER_NS)
+#define timer_get_elapsed_us(timer) timer_get_elapsed(timer, TIMER_US)
+#define timer_get_elapsed_ms(timer) timer_get_elapsed(timer, TIMER_MS)
+#define timer_get_elapsed_s(timer)  timer_get_elapsed(timer, TIMER_S)
+
 #endif /* TIMER_H */
